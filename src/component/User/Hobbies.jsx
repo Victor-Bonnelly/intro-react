@@ -1,7 +1,7 @@
 export function Hobbies() {
     const hobbiesFromDB = [{id: 1, nom: "Sport"}, {id: 2, nom: "Informatique"}, {id: 3, nom: "Jardinage"}];
     return (
-        <hobbies>
+        <div>
             <h2>Mes Hobbies</h2>
             <ul>
                 {hobbiesFromDB.map((hobby) => (
@@ -9,6 +9,6 @@ export function Hobbies() {
                 ))}
                
             </ul>
-        </hobbies>
+        </div>
     );
 }
