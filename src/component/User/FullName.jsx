@@ -3,10 +3,10 @@ import { LastName } from './LastName'
 
 export function FullName() {
     return (
-        <fullname>
+        <div>
         
             <FirstName />  
             <LastName />
-        </fullname>
+        </div>
     )
 }

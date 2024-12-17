@@ -2,8 +2,8 @@
 
 export function FirstName() {
     return (
-        <firstname>
+        <div>
             Victor
-        </firstname>
+        </div>
     )
 }

@@ -3,10 +3,10 @@ import { Hobbies } from './Hobbies'
 
 export function User() {
     return (
-        <user>
+        <div>
             User:
             <FullName />
             <Hobbies />
-        </user>
+        </div>
     )
 }
