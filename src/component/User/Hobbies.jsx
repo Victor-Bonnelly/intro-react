@@ -1,12 +1,12 @@
 export function Hobbies() {
+    const hobbiesFromDB = [{id: 1, nom: "Sport"}, {id: 2, nom: "Informatique"}, {id: 3, nom: "Jardinage"}];
     return (
         <hobbies>
             <h2>Mes Hobbies</h2>
             <ul>
-                <li>Sport</li>
-                <li>Informatique</li>
-                <li>Jardinage</li>
-               
+                {hobbiesFromDB.map((hobby) => (
+                    <li style={{padding: "10px", border:"1px solid black",margin:"0.5rem"}} key={hobby.id}>{hobby.nom}</li>
+                ))}
                
             </ul>
         </hobbies>
