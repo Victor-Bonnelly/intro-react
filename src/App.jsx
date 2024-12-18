@@ -10,6 +10,7 @@ import { User } from './component/User/user';
 import { Player } from './component/Player/Player';
 import { Routine } from './component/routine/Routines';
 import { Compteur } from './component/container/Compteur';
+import { Menu } from './component/container/Menu';
 function App() {
   const user = {
     prenom: "Victor",
@@ -24,6 +25,7 @@ function App() {
       <Player />
       <Routine />
       <Compteur />
+      <Menu />
       <Footer />
     </>
   )
