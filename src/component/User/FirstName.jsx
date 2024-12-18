@@ -1,9 +1,13 @@
+import PropTypes from 'prop-types';
 
-
-export function FirstName() {
+export function FirstName({prenom}) {
     return (
         <div>
-            Victor
+            {prenom}
         </div>
     )
 }
+
+FirstName.propTypes = {
+    prenom: PropTypes.string,
+};

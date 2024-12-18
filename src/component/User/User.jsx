@@ -1,12 +1,20 @@
 import { FullName } from './FullName'
 import { Hobbies } from './Hobbies'
+import PropTypes from 'prop-types';
 
-export function User() {
+User.propTypes = {
+    user: PropTypes.shape({
+        prenom: PropTypes.string,
+        nom: PropTypes.string,
+        hobbies: PropTypes.array,
+    }),
+};
+export function User({user}) {
     return (
         <div>
             User:
-            <FullName />
-            <Hobbies />
+            <FullName user={user} />
+            <Hobbies hobbies={user.hobbies} />
         </div>
     )
 }
