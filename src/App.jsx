@@ -8,6 +8,7 @@ import { Footer } from './component/container/footer';
 import { Bouton } from './component/ui/Bouton/Bouton';
 import { User } from './component/User/user';
 import { Player } from './component/Player/Player';
+import { Routine } from './component/routine/Routines';
 function App() {
   const user = {
     prenom: "Victor",
@@ -20,6 +21,7 @@ function App() {
       <User user={user} />
       <Bouton />
       <Player />
+      <Routine />
       <Footer />
     </>
   )
