@@ -9,10 +9,15 @@ import { Bouton } from './component/ui/Bouton/Bouton';
 import { User } from './component/User/user';
 import { Player } from './component/Player/Player';
 function App() {
+  const user = {
+    prenom: "Victor",
+    nom: "Bonnelly",
+    hobbies: [{id: 1, nom: "Sport"}, {id: 2, nom: "Informatique"}, {id: 3, nom: "Jardinage"}]
+  }
   return (
     <>
       <Header />
-      <User />
+      <User user={user} />
       <Bouton />
       <Player />
       <Footer />
