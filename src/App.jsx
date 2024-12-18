@@ -9,6 +9,7 @@ import { Bouton } from './component/ui/Bouton/Bouton';
 import { User } from './component/User/user';
 import { Player } from './component/Player/Player';
 import { Routine } from './component/routine/Routines';
+import { Compteur } from './component/container/Compteur';
 function App() {
   const user = {
     prenom: "Victor",
@@ -22,6 +23,7 @@ function App() {
       <Bouton />
       <Player />
       <Routine />
+      <Compteur />
       <Footer />
     </>
   )
