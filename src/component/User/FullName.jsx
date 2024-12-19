@@ -1,8 +1,12 @@
-import PropTypes from 'prop-types';
+
 import { FirstName } from './FirstName'
 import { LastName } from './LastName'
+import { useContext } from 'react';
+import { utilisateurContext } from '../../App';
 
-export function FullName({user}) {
+
+export function FullName() {
+    const user = useContext(utilisateurContext);
     return (
         <div>
         
@@ -12,9 +16,3 @@ export function FullName({user}) {
     )
 }
 
-FullName.propTypes = {
-    user: PropTypes.shape({
-        prenom: PropTypes.string,
-        nom: PropTypes.string,
-    }),
-};
