@@ -12,6 +12,7 @@ import { Player } from './component/Player/Player';
 import { Routine } from './component/routine/Routines';
 import { Compteur } from './component/container/Compteur';
 import { Menu } from './component/container/Menu';
+import GOT from './component/container/GOT';
 export const utilisateurContext = createContext();
 function App() {
   const user = {
@@ -29,6 +30,7 @@ function App() {
       <Routine />
       <Compteur />
       <Menu />
+      <GOT />
       <Footer />
     </utilisateurContext.Provider>
   )
