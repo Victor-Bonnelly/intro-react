@@ -1,19 +1,14 @@
 import { FullName } from './FullName'
 import { Hobbies } from './Hobbies'
-import PropTypes from 'prop-types';
+import { useContext } from 'react';
+import { utilisateurContext } from '../../App';
 
-User.propTypes = {
-    user: PropTypes.shape({
-        prenom: PropTypes.string,
-        nom: PropTypes.string,
-        hobbies: PropTypes.array,
-    }),
-};
-export function User({user}) {
+export function User() {
+    const user = useContext(utilisateurContext);
     return (
         <div>
             User:
-            <FullName user={user} />
+            <FullName />
             <Hobbies hobbies={user.hobbies} />
         </div>
     )
